@@ -3,7 +3,7 @@ import Tasks from "./components/Tasks";
 import AddTasks from "./components/AddTasks";
 import "./App.css";
 import Title from "./components/Title";
-import Test from "./components/Test.jsx"; // Importando o componente Test
+//import Test from "./components/Test.jsx";
 
 function App() {
   const [tasks, setTasks] = useState(
