@@ -3,7 +3,6 @@ import Tasks from "./components/Tasks";
 import AddTasks from "./components/AddTasks";
 import "./App.css";
 import Title from "./components/Title";
-//import Test from "./components/Test.jsx";
 
 function App() {
   const [tasks, setTasks] = useState(
@@ -74,8 +73,6 @@ function App() {
     (
       <div className="w-screen h-screen bg-slate-500 flex justify-center p-6">
         <div className="w-[500px] space-y-4">
-          <Test />
-
           <Title>Gerenciador de Tarefas</Title>
           <AddTasks onTasksAddSubmit={onTasksAddSubmit} />
           <Tasks
