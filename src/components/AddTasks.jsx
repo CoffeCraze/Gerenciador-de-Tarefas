@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "./input.jsx";
+import Input from "./Input.jsx";
 import Button from "./Button.jsx";
 
 function AddTasks({ onTasksAddSubmit }) {
