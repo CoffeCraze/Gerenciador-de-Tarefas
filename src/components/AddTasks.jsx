@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Input from "./Input.jsx";
 import Button from "./Button.jsx";
 
@@ -22,7 +22,7 @@ function AddTasks({ onTasksAddSubmit }) {
       />
       <Button
         onClick={() => {
-          if (!title.trim() || !description.trim()) {
+          if (!title.trim('') || !description.trim('')) {
             alert("Por favor, preencha todos os campos.");
           } else {
             onTasksAddSubmit(title, description);
@@ -34,7 +34,7 @@ function AddTasks({ onTasksAddSubmit }) {
       >
         Adicionar
       </Button>
-    </div>
+    </div >
   );
 }
 
